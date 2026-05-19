@@ -8,6 +8,7 @@
 //
 
 import BiangBiangUI
+internal import CoreFoundation
 
 enum JapaneseConfig {
     @MainActor
@@ -15,8 +16,8 @@ enum JapaneseConfig {
         branding: Branding(
             appName: "BiangBiang Kana",
             accentColorHex: "#BC002D",
-            logoAssetName: "Logo",
-            buttonLogoAssetName: "Logo",
+            logoAssetName: "logo",
+            buttonLogoAssetName: "android_button_ico",
             githubRepo: "veeso/BiangBiang-Kana",
             supportEmail: "info@veeso.dev",
             appStoreId: "6754869174",
@@ -53,6 +54,7 @@ enum JapaneseConfig {
             "inputTitle": "Japanese",
             "outputTitle": "Romaji",
             "appSubtitle": "Convert Japanese to Romaji",
-        ]
+        ],
+        minimumOcrScaleFactor: 0.7,
     )
 }
