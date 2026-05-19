@@ -611,7 +611,7 @@
 			repositoryURL = "https://github.com/veeso/BiangBiangUI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.2;
+				minimumVersion = 0.3.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
