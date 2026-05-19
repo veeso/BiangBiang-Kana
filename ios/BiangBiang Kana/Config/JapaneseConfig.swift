@@ -20,7 +20,7 @@ enum JapaneseConfig {
             buttonLogoAssetName: "android_button_ico",
             githubRepo: "veeso/BiangBiang-Kana",
             supportEmail: "info@veeso.dev",
-            appStoreId: "6754869174",
+            appStoreId: "6770998277",
             playStoreId: "dev.veeso.biangbiangkana"
         ),
         languages: [
@@ -55,6 +55,6 @@ enum JapaneseConfig {
             "outputTitle": "Romaji",
             "appSubtitle": "Convert Japanese to Romaji",
         ],
-        minimumOcrScaleFactor: 0.7,
+        minimumOcrScaleFactor: 0.6,
     )
 }

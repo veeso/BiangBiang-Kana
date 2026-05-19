@@ -21,7 +21,7 @@ I developed this app to help myself and others learn Japanese more effectively b
 
 You can download BiangBiang Kana from the App Store and from the Google Play Store.
 
-[![App Store](./assets/app_store_badge.png)](https://apps.apple.com/app/id6754869174)
+[![App Store](./assets/app_store_badge.png)](https://apps.apple.com/app/id6770998277)
 [![Google Play](./assets/google_play_badge.png)](https://play.google.com/store/apps/details?id=dev.veeso.biangbiangkana)
 
 ## Required Tools
