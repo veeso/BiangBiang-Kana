@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en_US" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    BiangBiang Kana — Japanese to Romaji Translator & OCR App for iOS and Android
+  </title>
+  <meta name="description"
+    content="Free Japanese to Romaji translator app for iPhone and Android. Convert Japanese text — Kanji, Hiragana and Katakana — into Hepburn romaji, scan Japanese text from photos and the live camera with OCR, and translate Japanese instantly." />
+  <meta name="keywords"
+    content="Japanese to Romaji, Japanese to Romaji converter, romaji converter, Japanese OCR, Japanese translator app, scan Japanese text, Hepburn romaji, kanji to romaji, kana to romaji, learn Japanese, Japanese reader, iOS Japanese app, Android Japanese app, furigana, hiragana, katakana" />
+  <meta name="author" content="Christian Visintin" />
+  <meta name="robots" content="index, follow" />
+  <meta name="application-name" content="BiangBiang Kana" />
+  <meta name="apple-mobile-web-app-title" content="BiangBiang Kana" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://biangbiangkana.app/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="BiangBiang Kana — Japanese to Romaji Translator & OCR App" />
+  <meta property="og:description"
+    content="Convert Japanese text (Kanji, Hiragana, Katakana) to Hepburn romaji, scan text from photos, and translate Japanese instantly on iPhone and Android." />
+  <meta property="og:image" content="https://biangbiangkana.app/assets/images/og_preview.jpeg" />
+  <meta property="og:image:alt" content="BiangBiang Kana app preview showing Japanese to Romaji conversion" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="625" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BiangBiang Kana" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://biangbiangkana.app/" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BiangBiang Kana — Japanese to Romaji Translator & OCR App" />
+  <meta name="twitter:description"
+    content="Convert Japanese text (Kanji, Hiragana, Katakana) to Hepburn romaji, scan text from photos, and translate Japanese instantly on iPhone and Android." />
+  <meta name="twitter:image" content="https://biangbiangkana.app/assets/images/og_preview.jpeg" />
+  <meta name="twitter:image:alt" content="BiangBiang Kana app preview showing Japanese to Romaji conversion" />
+  <!-- tailwind -->
+  <link href="output.css" rel="stylesheet" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "BiangBiang Kana",
+    "alternateName": "ビャンビャン仮名",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Language Learning",
+    "description": "Free Japanese to Romaji translator app for iPhone and Android. Convert Japanese text — Kanji, Hiragana and Katakana — into Hepburn romaji, scan Japanese text from photos and the live camera with OCR, and translate Japanese instantly.",
+    "url": "https://biangbiangkana.app/",
+    "image": "https://biangbiangkana.app/assets/images/og_preview.jpeg",
+    "inLanguage": ["en", "ja"],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Christian Visintin",
+      "email": "info@veeso.dev",
+      "url": "https://veeso.dev"
+    },
+    "downloadUrl": [
+      "https://apps.apple.com/app/id6754869174",
+      "https://play.google.com/store/apps/details?id=dev.veeso.biangbiangkana"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="min-h-screen  bg-brand">
+
+    <!-- Title -->
+    <div class="flex flex-col gap-4 items-center justify-center">
+      <div>
+        <img src="assets/images/logo.webp" alt="BiangBiang Kana app logo" width="300" height="300"
+          class="w-64 h-64 sm:w-32 sm:h-32 mx-auto mb-4" />
+      </div>
+      <h1 class="text-3xl font-bold text-center text-white mb-2">BiangBiang Kana</h1>
+      <p class="text-center text-white text-xl mb-6 px-4">
+        The free Japanese to Romaji translator and OCR app for iPhone and Android.
+      </p>
+    </div>
+
+    <!-- Download buttons -->
+    <div class="flex items-center justify-center pb-8">
+      <a href="https://apps.apple.com/app/id6754869174" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/app_store.svg" alt="Download on the App Store" class="h-20 sm:h-10" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=dev.veeso.biangbiangkana" target="_blank"
+        rel="noopener noreferrer">
+        <img src="assets/images/google_play.svg" alt="Get it on Google Play" class="h-28 sm:h-14" />
+      </a>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="grid grid-cols-2 sm:grid-cols-1 items-center justify-around w-full gap-4 p-4 h-fit">
+      <div class="flex items-center justify-center">
+        <div>
+          <img src="assets/images/preview.webp" width="1320" height="2868" alt="App Screenshot 1"
+            class="w-auto p-2 h-[720px]" />
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <div>
+          <img src="assets/images/camera_ocr.webp" width="1320" height="2868"
+            alt="Live camera OCR scanning Japanese text and showing Romaji" class="w-auto p-2 h-[720px]" />
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO content -->
+    <section class="max-w-3xl mx-auto px-6 py-12 text-white">
+      <h2 class="text-2xl font-bold mb-4">Convert Japanese to Romaji in seconds</h2>
+      <p class="mb-4">
+        BiangBiang Kana is a free, native mobile app that turns Japanese text — Kanji (漢字),
+        Hiragana (ひらがな) and Katakana (カタカナ) — into Hepburn romaji. Paste or type any
+        Japanese text — a poem, a menu, a chat message, a textbook paragraph — and get the
+        romanized reading instantly, with Kanji resolved to their readings. Non-Japanese
+        characters such as Latin letters, numbers, punctuation and emoji are preserved in
+        place, so mixed-language text stays readable.
+      </p>
+      <p class="mb-4">
+        The app is built natively for both platforms: a SwiftUI version for iPhone and iPad, and a
+        Jetpack Compose version for Android. There is no shared cross-platform layer, which means
+        each app feels at home on its operating system and uses the OS-level translation engines for
+        speed and offline support.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Scan Japanese text with OCR from photos and live camera</h2>
+      <p class="mb-4">
+        Point your phone at a Japanese sign, restaurant menu, book page or product label and
+        BiangBiang Kana will read the text for you. The OCR engine — Apple Vision on iOS and
+        Google ML Kit on Android — recognizes Japanese in real time from the camera feed, and
+        also works on photos from your gallery. Each detected line is overlaid with its romaji
+        reading, making it easy to study, pronounce, or look up unfamiliar Japanese on the spot.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Translate Japanese to your language</h2>
+      <p class="mb-4">
+        Beyond pronunciation, BiangBiang Kana can translate Japanese text into your preferred
+        language using on-device translation: the iOS Translation framework on iPhone and
+        Google ML Kit Translate on Android. Translations run locally once the language pack is
+        downloaded, so the app keeps working without an internet connection and without sending
+        your text to a third-party server.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Who is it for?</h2>
+      <ul class="list-disc list-inside mb-4 space-y-2">
+        <li>Japanese learners who need quick romaji readings while studying.</li>
+        <li>Travelers in Japan who need to read signs, menus and labels.</li>
+        <li>Teachers and students who work with Japanese textbooks, flashcards, or handwritten notes.</li>
+        <li>Anyone who receives Japanese messages, documents or photos and wants to understand them.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Key features</h2>
+      <ul class="list-disc list-inside mb-4 space-y-2">
+        <li>Japanese to Hepburn romaji conversion (e.g. konnichiwa for こんにちは).</li>
+        <li>Kanji readings resolved automatically, mixed with Kana and Latin text.</li>
+        <li>OCR from photos and from the live camera feed.</li>
+        <li>On-device translation of Japanese into many target languages.</li>
+        <li>Privacy-friendly: text and images stay on your device.</li>
+        <li>Free to download on the App Store and Google Play.</li>
+        <li>Native iOS (SwiftUI) and Android (Jetpack Compose) apps.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Why it is called BiangBiang Kana</h2>
+      <p class="mb-4">
+        BiangBiang Kana belongs to the <em>BiangBiang</em> family of language apps, named after
+        <em>biáng</em> (𰻝) — one of the most complex CJK characters in existence, used to write
+        <em>biángbiáng noodles</em>. Where its sibling app handles Chinese, <em>Kana</em> focuses
+        on Japanese: taking complicated text and making it easy to read.
+      </p>
+    </section>
+  </main>
+  <footer class="bg-brand pt-16 pb-2 px-20 sm:px-4">
+    <div class="flex flex-col gap-8 items-center">
+      <div class="flex sm:flex-col sm:items-start items-center justify-between gap-8 w-full">
+        <!-- Links -->
+        <div class="flex flex-col gap-4">
+          <div>
+            <a href="index.html" class="text-white underline">Home</a>
+          </div>
+          <div>
+            <a href="privacy.html" class="text-white underline">Privacy Policy</a>
+          </div>
+          <div>
+            <a href="https://github.com/veeso/BiangBiang-Kana" class="text-white underline">Github</a>
+          </div>
+        </div>
+        <!-- Legal -->
+        <div class="flex flex-col gap-4">
+          <div>
+            <span class="text-white">Christian Visintin</span>
+          </div>
+          <div>
+            <a href="mailto:info@veeso.dev" class="text-white underline">info@veeso.dev</a>
+          </div>
+          <div>
+            <span class="text-white">Via Marangoni 33, 33100, Udine, Italy</span>
+          </div>
+          <div>
+            <span class="text-white">IT03104140300</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <div>
+          <span class="text-white text-xs">Copyright © <span id="copyright-year">2026</span> Christian Visintin</span>
+        </div>
+        <div>
+          <span class="text-white text-xs">Google Play and the Google Play logo are trademarks of Google LLC.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    // Set current year in copyright
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
