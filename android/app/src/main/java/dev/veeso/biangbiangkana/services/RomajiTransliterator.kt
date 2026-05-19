@@ -19,11 +19,16 @@ class RomajiTransliterator : Transliterator {
     override fun transliterate(scriptSpan: String): String {
         val parts = tokenizer.tokenize(scriptSpan).map { token ->
             val reading = token.reading
-            if (reading.isNullOrEmpty() || reading == "*") {
+            // Unknown tokens (e.g. out-of-vocabulary Katakana compounds)
+            // carry no reading; their surface is itself a Katakana reading,
+            // so convert it too. Non-Katakana surfaces pass through
+            // KatakanaRomaji.convert unchanged, so this never regresses.
+            val kana = if (reading.isNullOrEmpty() || reading == "*") {
                 token.surface
             } else {
-                KatakanaRomaji.convert(reading)
+                reading
             }
+            KatakanaRomaji.convert(kana)
         }
         return parts.joinToString(" ").trim()
     }

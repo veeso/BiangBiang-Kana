@@ -24,7 +24,7 @@ fun japaneseConfig(): BiangBiangConfig {
             buttonLogoAssetName = "logo_button_ico",
             githubRepo = "veeso/BiangBiang-Kana",
             supportEmail = "info@veeso.dev",
-            appStoreId = "6754869174",
+            appStoreId = "6770998277",
             playStoreId = "dev.veeso.biangbiangkana",
         ),
         languages = listOf(
@@ -45,7 +45,7 @@ fun japaneseConfig(): BiangBiangConfig {
                         id = "japanese",
                         displayName = "Japanese",
                         transliterator = romaji,
-                        ttsLanguageCode = "ja-JP",
+                        ttsLanguageCode = "ja",
                         translatable = true,
                     ),
                 ),

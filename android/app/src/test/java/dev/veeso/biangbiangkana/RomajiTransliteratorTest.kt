@@ -33,4 +33,11 @@ class RomajiTransliteratorTest {
         assertTrue(out.isNotEmpty())
         assertTrue(out.all { it.code < 0x3000 })
     }
+
+    /** Out-of-vocabulary Katakana compounds carry no Kuromoji reading;
+     *  their surface must still be romanised, not passed through raw. */
+    @Test fun unknownKatakanaCompound() {
+        val out = t.transliterate("明太マヨフライドポテト")
+        assertTrue("untransliterated katakana in [$out]", out.all { it.code < 0x3000 })
+    }
 }
