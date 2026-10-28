@@ -46,7 +46,7 @@ fun japaneseConfig(): BiangBiangConfig {
                         displayName = "Japanese",
                         transliterator = romaji,
                         ttsLanguageCode = "ja",
-                        translatable = true,
+                        translationLanguageCode = "ja",
                     ),
                 ),
             ),
