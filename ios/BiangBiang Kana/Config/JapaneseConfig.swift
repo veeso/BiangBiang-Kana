@@ -42,7 +42,7 @@ enum JapaneseConfig {
                         displayName: "Japanese",
                         transliterator: RomajiTransliterator(),
                         ttsLanguageCode: "ja-JP",
-                        translatable: true
+                        translationLanguageCode: "ja"
                     ),
                 ]
             ),
