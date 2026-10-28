@@ -1,12 +1,20 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project are documented in this file.
 
-- [Changelog](#changelog)
-  - [0.1.0](#010)
+## 0.1.1
 
-## 0.1.0
+Released on 2026-10-28
 
-Released on 19/05/2026
+### Fixed
 
-- Initial release of the Android application, featuring core functionalities and user interface design.
+- **android:** fallback for unrecognized sequence
+- **android:** bump BiangBiangUI
+
+> Prevents app crashing on OCR randomly
+
+### Build
+
+- **android:** bump BiangBiangUI to 0.5.1 and app to 0.1.1 (11)
+
+> Use translationLanguageCode, which replaces translatable in 0.5.1.
